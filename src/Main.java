@@ -366,7 +366,8 @@ public class Main {
             }else {
                 System.out.println("good");
             }
-        }else if (name ==2){
+            sasha(heal,fullness,mood,heal1,fullness1,mood1,heal2,fullness2,mood2);
+        }else if (name ==3){
             System.out.println("Gerda");
             System.out.println("Heal " + heal2);
             System.out.println("Fullness " + fullness2);
@@ -398,6 +399,7 @@ public class Main {
             }else {
                 System.out.println("good");
             }
+            gerda(heal,fullness,mood,heal1,fullness1,mood1,heal2,fullness2,mood2);
         }
     }
     static void sasha(int heal, int fullness, int mood,int heal1, int fullness1, int mood1,int heal2, int fullness2, int mood2) throws IOException {
