@@ -324,7 +324,19 @@ public class Main {
         System.out.print("+");
         printDashes(68);
         System.out.println("+");
-
+        System.out.println("Want to add a cat?");
+        System.out.println("Yes-1");
+        System.out.println("No-0");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int s = Integer.parseInt(br.readLine());
+        if (s==1){
+            newCat();
+            catHeal(heal,fullness,mood,heal1,fullness1,mood1,heal2,fullness2,mood2);
+        } else if (s==0){
+            catHeal(heal,fullness,mood,heal1,fullness1,mood1,heal2,fullness2,mood2);
+        }
+        System.out.println("Next day");
+        nextDay(year, year2,year1,heal,fullness,mood,heal1,fullness1,mood1,heal2,fullness2,mood2);
     }
     static void boss(int heal, int fullness, int mood,int heal1, int fullness1, int mood1,int heal2, int fullness2, int mood2) throws IOException {
         System.out.println("Boss -1, Sasha -2, Gerda -3");
